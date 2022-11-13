@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ceodit</title>
+    <!-- Font and animations -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" >
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'main.css' %}">
+</head>
+  <body>
+    <!-- Navbar start -->
+    <nav class="navbar fixed-top navbar-expand-lg bg-main p-md-3 p-5">
+        <div class="container">
+          <a class="navbar-brand text-uppercase text-main ouranimation" href="{% url 'home' %}">ceodit</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="mx-auto"></div>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link text-main ouranimation1" href="#">Hakkımızda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-main ouranimation1" href="{% url 'mainapp:services' %}">Hizmetlerimiz</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-main ouranimation1" href="{% url 'mainapp:team' %}">Ekip</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-main ouranimation1" href="{% url 'mainapp:contact' %}">İletişim</a>
+              </li>
+            </ul>
+          </div>
+          <div class="ms-auto">
+            <div class="navbar-expand" id="navbarNav">
+            <label class="dark-mody" onclick="myFunction()" >
+              <img src="{% static 'img/dark-mode.png' %}" width="20" alt="dark-mode">
+            </label>
+          </div>
+        </div>
+        </div>
+      </nav>
+    <!-- Navbar end   -->
+
+    <div class="container">
+      {% block content %}
+
+      {% endblock %}
+
+    </div>
+
+
+
+    <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="footer-content">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <h3 class="text-uppercase">ceodit</h3>
+              <p>
+                İST,Beşiktaş <br>
+                TR 34120, TURKEY<br><br>
+                <strong>Phone:</strong> 0212 789 842<br>
+                <strong>Email:</strong> info@example.com<br>
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Kullanılabilir Linkler</h4>
+            <ul>
+              <li><img class="me-2" src="{% static 'img/next.png' %}" width="17" alt="next"> <a href="{% url 'home' %}">Anasayfa</a></li>
+              <li><img class="me-2" src="{% static 'img/next.png' %}" width="17" alt="next"> <a href="{% url 'mainapp:team' %}">Hakkımızda</a></li>
+              <li><img class="me-2" src="{% static 'img/next.png' %}" width="17" alt="next"> <a href="{% url 'mainapp:services' %}">Hizmetlerimiz</a></li>
+              <li><img class="me-2" src="{% static 'img/next.png' %}" width="17" alt="next"> <a href="{% url 'home' %}">Kullanım Şartları</a></li>
+              <li><img class="me-2" src="{% static 'img/next.png' %}" width="17" alt="next"> <a href="{% url 'home' %}">Gizlilik Politikası</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Hizmetlerimiz</h4>
+            <ul>
+              <li><img class="me-2" src="{% static 'img/next.png' %}" width="17" alt="next"> <a href="{% url 'home' %}">Yönetim Asistanlığı</a></li>
+              <li><img class="me-2" src="{% static 'img/next.png' %}" width="17" alt="next"> <a href="{% url 'home' %}">Kişisel Asistan</a></li>
+              <li><img class="me-2" src="{% static 'img/next.png' %}" width="17" alt="next"> <a href="{% url 'home' %}">Ürün Desteği</a></li>
+              <li><img class="me-2" src="{% static 'img/next.png' %}" width="17" alt="next"> <a href="{% url 'home' %}">Özelleştirme</a></li>
+              <li><img class="me-2" src="{% static 'img/next.png' %}" width="17" alt="next"> <a href="{% url 'home' %}">----</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-legal text-center">
+      <div class="container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center">
+
+        <div class="d-flex flex-column align-items-center align-items-lg-start">
+          <div class="copyright">
+            &copy;<strong class="ms-1"><span>Ceodit</span></strong>. Bütün Hakları Saklıdır
+          </div>
+          <div class="credits">
+            Tasarım <a href="#">ceoditmedia</a> tarafından yapılmıştır
+          </div>
+        </div>
+
+        <div class="social-links order-first order-lg-last mb-3 mb-lg-0">
+          <a href="https://www.twitter.com" class="twitter"><img src="{% static 'img/twitter.png' %}" width="20" alt=""></a>
+          <a href="https://www.instagram.com" class="facebook"><img src="{% static 'img/inst.png' %}" width="20" alt=""></a>
+          <a href="https://www.linkedin.com" class="instagram"><img src="{% static 'img/linkd.png' %}" width="20" alt=""></a>
+        </div>
+
+      </div>
+    </div>
+
+  </footer><!-- End Footer -->
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="{% static 'js/jquery-3.1.1.min.js' %}"></script>
+  <script src="{% static 'js/main.js' %}"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+
+</body>
+</html>

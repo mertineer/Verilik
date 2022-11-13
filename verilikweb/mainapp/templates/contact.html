@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<!-- ======= Contact Section ======= -->
+<section id="contact" class="contact">
+  <div class="container">
+
+    <div class="section-header">
+      <h2>İletişim</h2>
+      <p>Ea vitae aspernatur deserunt voluptatem impedit deserunt magnam occaecati dssumenda quas ut ad dolores adipisci aliquam.</p>
+    </div>
+
+  </div>
+  <div class="container">
+  <div class="map">
+    <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=istanbul%20be%C5%9Fikta%C5%9F&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+  </div>
+</div>
+  <!-- End Google Maps -->
+
+  <div class="container">
+
+    <div class="row gy-5 gx-lg-5">
+
+      <div class="col-lg-4">
+        <div class="info">
+          <h3>Bizimle İletişime Geçin</h3>
+          <p>Et id eius voluptates atque nihil voluptatem enim in tempore minima sit ad mollitia commodi minus.</p>
+
+          <div class="info-item d-flex">
+            <div>
+              <h4><img src="{% static 'img/location.png' %}" width="30" alt="location">Adres:</h4>
+              <p>İstanbul, Beşiktaş, TR34120</p>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="info-item d-flex">
+            <div>
+              <h4><img src="{% static 'img/mail.png' %}" width="30" alt="email">Email:</h4>
+              <p>info@example.com</p>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="info-item d-flex">
+            <div>
+              <h4><img src="{% static 'img/phone.png' %}" width="30" alt="phone">Telefon:</h4>
+              <p>0212 789 842</p>
+            </div>
+          </div><!-- End Info Item -->
+
+        </div>
+
+      </div>
+
+      <div class="col-lg-8">
+
+        <form method="post">
+          {{ form.as_p }}
+          {% csrf_token %}
+          <div class="text-center my-4"><button class="btn btn-main" type="submit">Mesaj Gönder</button></div>
+
+        </form>
+      </div><!-- End Contact Form -->
+
+    </div>
+
+  </div>
+</section><!-- End Contact Section -->
+
+{% endblock %}
+
+
+
+
+<!-- <div class="row">
+  <div class="col-md-6 form-group">
+    <input type="text" name="name" class="form-control" id="name" placeholder="İsim" required>
+  </div>
+  <div class="col-md-6 form-group mt-3 mt-md-0">
+    <input type="email" class="form-control" name="email" id="email" placeholder="E-Mail" required>
+  </div>
+</div>
+<div class="form-group mt-3">
+  <input type="text" class="form-control" name="subject" id="subject" placeholder="Konu" required>
+</div>
+<div class="form-group mt-3">
+  <textarea class="form-control" name="message" placeholder="Mesaj" required></textarea>
+</div> -->

@@ -1,0 +1,148 @@
+<!-- class Member(name,gender,title,count,
+             twitter='twitter.com',
+             github='github.com',
+             linkedn='linkedin.com',
+             insta='instagram.com'):
+    def __init__(self):
+        self.name=name
+        self.gender=gender
+        self.title=title
+        self.twitter=twitter
+        self.github=github
+        self.linkedn=linkedin
+        self.insta=insta
+        self.count=count -->
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+
+        <!-- ======= Team Section ======= -->
+        <section id="team" class="team">
+          <div class="container" data-aos="fade-up">
+
+            <div class="section-header">
+              <h2>Ekibimiz</h2>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum enim necessitatibus pariatur, nisi rerum
+                doloremque officia illum cum vero laudantium esse! Possimus veniam, praesentium iste tempora vero vel dicta qui?</p>
+            </div>
+
+            <div class="row gy-5">
+
+              <div class="col-xl-4 col-md-6 d-flex" data-aos="zoom-in" data-aos-delay="200">
+                <div class="team-member">
+                  <div class="member-img">
+                    <img src="{% static 'img/team.png' %}" class="img-fluid" alt="">
+                  </div>
+                  <div class="member-info">
+                    <div class="social">
+                      <a href=""><img src="{% static 'img/twitter.png' %}" width="25" alt="twitter"></a>
+                      <a href=""><img src="{% static 'img/inst.png' %}" width="25" alt="instagram"></a>
+                      <a href=""><img src="{% static 'img/git.png' %}" width="30" alt="github"></a>
+                      <a href=""><img src="{% static 'img/linkd.png' %}" width="25" alt="linkedin"></a>
+                    </div>
+                    <h4>Ömer Özbakkal</h4>
+                    <span>Koordinatör</span>
+                  </div>
+                </div>
+              </div><!-- End Team Member -->
+
+              <div class="col-xl-4 col-md-6 d-flex" data-aos="zoom-in" data-aos-delay="400">
+                <div class="team-member">
+                  <div class="member-img">
+                    <img src="{% static 'img/team.png' %}" class="img-fluid" alt="">
+                  </div>
+                  <div class="member-info">
+                    <div class="social">
+                      <a href=""><img src="{% static 'img/twitter.png' %}" width="25" alt="twitter"></a>
+                      <a href=""><img src="{% static 'img/inst.png' %}" width="25" alt="instagram"></a>
+                      <a href=""><img src="{% static 'img/git.png' %}" width="30" alt="github"></a>
+                      <a href=""><img src="{% static 'img/linkd.png' %}" width="25" alt="linkedin"></a>
+                    </div>
+                    <h4>Mehmet Buğra Bulut</h4>
+                    <span>Bulut Sistemleri</span>
+                  </div>
+                </div>
+              </div><!-- End Team Member -->
+
+              <div class="col-xl-4 col-md-6 d-flex" data-aos="zoom-in" data-aos-delay="600">
+                <div class="team-member">
+                  <div class="member-img">
+                    <img src="{% static 'img/team2.png' %}" class="img-fluid" alt="">
+                  </div>
+                  <div class="member-info">
+                    <div class="social">
+                      <a href=""><img src="{% static 'img/twitter.png' %}" width="25" alt="twitter"></a>
+                      <a href=""><img src="{% static 'img/inst.png' %}" width="25" alt="instagram"></a>
+                      <a href=""><img src="{% static 'img/git.png' %}" width="30" alt="github"></a>
+                      <a href=""><img src="{% static 'img/linkd.png' %}" width="25" alt="linkedin"></a>
+                    </div>
+                    <h4>Feyza Erdem</h4>
+                    <span>Reklam ve Tasarım</span>
+                  </div>
+                </div>
+              </div><!-- End Team Member -->
+
+            </div>
+          <!-- SECOND ROW in TEAM -->
+            <div class="row gy-5">
+
+              <div class="col-xl-4 col-md-6 d-flex" data-aos="zoom-in" data-aos-delay="200">
+                <div class="team-member">
+                  <div class="member-img">
+                    <img src="{% static 'img/team.png' %}" class="img-fluid" alt="">
+                  </div>
+                  <div class="member-info">
+                    <div class="social">
+                      <a href=""><img src="{% static 'img/twitter.png' %}" width="25" alt="twitter"></a>
+                      <a href=""><img src="{% static 'img/inst.png' %}" width="25" alt="instagram"></a>
+                      <a href=""><img src="{% static 'img/git.png' %}" width="30" alt="github"></a>
+                      <a href=""><img src="{% static 'img/linkd.png' %}" width="25" alt="linkedin"></a>
+                    </div>
+                    <h4>Mert</h4>
+                    <span>Yazılım</span>
+                  </div>
+                </div>
+              </div><!-- End Team Member -->
+
+              <div class="col-xl-4 col-md-6 d-flex" data-aos="zoom-in" data-aos-delay="400">
+                <div class="team-member">
+                  <div class="member-img">
+                    <img src="{% static 'img/team2.png' %}" class="img-fluid" alt="">
+                  </div>
+                  <div class="member-info">
+                    <div class="social">
+                      <a href=""><img src="{% static 'img/twitter.png' %}" width="25" alt="twitter"></a>
+                      <a href=""><img src="{% static 'img/inst.png' %}" width="25" alt="instagram"></a>
+                      <a href=""><img src="{% static 'img/git.png' %}" width="30" alt="github"></a>
+                      <a href=""><img src="{% static 'img/linkd.png' %}" width="25" alt="linkedin"></a>
+                    </div>
+                    <h4>Amilla</h4>
+                    <span>Yazılım</span>
+                  </div>
+                </div>
+              </div><!-- End Team Member -->
+
+              <div class="col-xl-4 col-md-6 d-flex" data-aos="zoom-in" data-aos-delay="600">
+                <div class="team-member">
+                  <div class="member-img">
+                    <img src="{% static 'img/team.png' %}" class="img-fluid" alt="">
+                  </div>
+                  <div class="member-info">
+                    <div class="social">
+                      <a href=""><img src="{% static 'img/twitter.png' %}" width="25" alt="twitter"></a>
+                      <a href=""><img src="{% static 'img/inst.png' %}" width="25" alt="instagram"></a>
+                      <a href=""><img src="{% static 'img/git.png' %}" width="30" alt="github"></a>
+                      <a href=""><img src="{% static 'img/linkd.png' %}" width="25" alt="linkedin"></a>
+                    </div>
+                    <h4>Mertcan</h4>
+                    <span>Frontend</span>
+                  </div>
+                </div>
+              </div><!-- End Team Member -->
+
+            </div>
+
+          </div>
+        </section><!-- End Team Section -->
+        {% endblock %}

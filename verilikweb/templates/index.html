@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+
+
+{% block content %}
+
+<!-- Hero animation start -->
+<section id="hero-animated" class="hero-animated d-flex align-items-center pb-5">
+    <div class="container d-flex flex-column justify-content-center align-items-center text-center position-relative" data-aos="zoom-out">
+      <img src="{% static 'img/hero-bg.png' %}" class="img-fluid animated">
+      <h2><span class="text-main1"><strong> Ceodit </strong></span> İle Mouse Ömrünüz Uzasın!</h2>
+      <p><span class="text-main1"><strong>Ceodit</strong></span> online çalışma ortamında kullanılan uygulama ve araç gereçlerini içerisinde bulunduran ve bunları konforlu bir şekilde kullanıcıya sunan <span class="text-main1">en iyi asistanlık hizmetini evinize ulaştırır     . </span></p>
+      <div class="d-flex">
+        <a href="#" class="btn btn-outline-danger">İncele</a>
+        <a href="#" class="glightbox btn-watch-video d-flex align-items-center text-decoration-none">
+            <span class="btn btn-outline-danger ms-3"><img src="{% static 'img/youtube.png' %}" class="me-1" width="17" alt="youtube"> Video'yu İzle</span></a>
+      </div>
+    </div>
+  </section>
+<!-- Hero animation end -->
+
+
+{% endblock %}

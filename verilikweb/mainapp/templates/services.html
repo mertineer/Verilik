@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<!-- Featured Section  -->
+<section id="featured-services" class="featured-services p-5 my-5">
+    <div class="container">
+
+      <div class="row gy-4">
+
+        <div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-out">
+          <div class="service-item position-relative">
+            <div class="icon"><img src="{% static 'img/secretary.png' %}" width="50" alt="sekreter"></div>
+            <h4><a href="" class="stretched-link">Sekreter Sistemi</a></h4>
+            <p>Lorem ipsum dolor sit amet.amet consectetur adipisicing.</p>
+          </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-out" data-aos-delay="200">
+          <div class="service-item position-relative">
+            <div class="icon"><img src="{% static 'img/theme.png' %}" width="50" alt="tema"></i></div>
+            <h4><a href="" class="stretched-link">Tema Seçenekleri</a></h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-out" data-aos-delay="400">
+          <div class="service-item position-relative">
+            <div class="icon"><img src="{% static 'img/server.png' %}" width="50" alt="server"></div>
+            <h4><a href="" class="stretched-link">Sunucu Desteği</a></h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum.</p>
+          </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-out" data-aos-delay="600">
+          <div class="service-item position-relative">
+            <div class="icon"><img src="{% static 'img/hourglass.png' %}" width="50" alt="hourglass" srcset=""></div>
+            <h4><a href="" class="stretched-link">Zaman Sayacı</a></h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div><!-- End Service Item -->
+
+      </div>
+
+    </div>
+  </section><!-- Featured Section End  -->
+
+  {% endblock %}

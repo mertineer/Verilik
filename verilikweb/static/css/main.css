@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #ecf0f1;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*Special colors*/
+.bg-main{
+    background-color: #227093;
+}
+.text-main{
+    color: #ecf0f1
+}
+
+/* Navbar */
+nav .navbar-brand{
+    letter-spacing: 3px;
+}
+
+nav ul li{
+    display: block;
+    margin: 5px;
+    letter-spacing: 0.5px;
+}
+
+.line{
+    width: 0px;
+    height: 2px;
+    background-color: #ecf0f1;
+    visibility: hidden;
+    transition: all .5s ease;
+}
+a:hover + .line{
+    width: 100%;
+    visibility: visible;
+}
